@@ -7,9 +7,9 @@ export const Products = ({ product, shopProduct }) => {
 
             return <div key={index}>
                 <h4>{element.title}</h4>
-                <img src={element.image} height={200} width={300} alt="" />
+                <img src={element.image} height={250} width={200} alt="" />
                 <h5>{element.description}</h5>
-                <button onClick={()=>{shopProduct(element)}}>comprar</button>
+                <button onClick={()=>{shopProduct(element)}}>Comprar por ${element.price}</button>
             </div>
         })}
     </div>
